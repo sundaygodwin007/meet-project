@@ -19,7 +19,7 @@ article {
 /* alying all header content to the center and giving it a margin bottom */
 header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 /* hiding the desktop image from showing on the phone screen */
@@ -30,7 +30,7 @@ header .combined-header img {
 
 header h1 {
   font-size: 2rem;
-  padding: 3rem 8rem 0;
+  padding: 1rem 6rem 0;
 }
 
 header p {
@@ -209,6 +209,10 @@ footer #new-version {
   header .combined-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header {
+    padding: 6rem 0;
   }
 
   /* styling for the header */
