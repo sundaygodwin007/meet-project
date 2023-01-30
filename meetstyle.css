@@ -19,7 +19,7 @@ article {
 /* alying all header content to the center and giving it a margin bottom */
 header {
   text-align: center;
-  padding-bottom: 3rem;
+  padding: 8rem 0;
 }
 
 /* hiding the desktop image from showing on the phone screen */
@@ -52,6 +52,11 @@ header button {
 header #question {
   background-color: rgb(124, 6, 105);
   margin-top: 1rem;
+}
+
+header button {
+  display: block;
+  margin: auto;
 }
 
 /* section */
@@ -120,7 +125,7 @@ footer #new-version {
 
 /* begining of tablet view */
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   section,
   article {
     padding: 0 2rem;
@@ -152,6 +157,8 @@ footer #new-version {
 
   header button {
     padding: 15px;
+    display: inline;
+    margin: auto;
   }
 
   /* section */
@@ -198,7 +205,7 @@ footer #new-version {
   }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 992px) {
   header .combined-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -211,6 +218,11 @@ footer #new-version {
 
   header p {
     padding: 0 7px;
+  }
+
+  header button {
+    display: inline;
+    margin: auto;
   }
 
   /* allowing the images for the desktop view to appear on the screen  */
