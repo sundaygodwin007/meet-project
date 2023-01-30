@@ -1,0 +1,260 @@
+/* centerlizing the logo */
+nav {
+  text-align: center;
+}
+
+/* hiding the image for the tablet screen from being visible on mobile screen */
+
+.image-tablet {
+  display: none;
+}
+
+/* giving the section and the article content space all round */
+
+body section,
+article {
+  padding: 2rem 2rem;
+}
+
+/* alying all header content to the center and giving it a margin bottom */
+header {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* hiding the desktop image from showing on the phone screen */
+
+header .combined-header img {
+  display: none;
+}
+
+header h1 {
+  font-size: 2rem;
+  padding: 3rem 8rem 0;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+header button {
+  border-style: none;
+  border-radius: 5rem;
+  padding: 10px;
+  width: 8rem;
+  cursor: pointer;
+  background-color: rgb(81, 124, 158);
+  color: white;
+}
+
+/* differnt color for the nquestion button */
+header #question {
+  background-color: rgb(124, 6, 105);
+  margin-top: 1rem;
+}
+
+/* section */
+
+section .images img {
+  width: 100%;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* article */
+article {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+article h3 {
+  color: rgb(24, 82, 97, 0.8);
+}
+
+article h1 {
+  font-size: 2rem;
+  padding: 0 3rem;
+  font-weight: bold;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(24, 82, 97, 0.8),
+      rgba(24, 82, 97, 0.8)
+    ),
+    url(./images/image-footer-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+/* hiding the footer header text from appering on the phone-view screen */
+footer h1 {
+  display: none;
+}
+
+footer .experience-more {
+  padding-bottom: 1rem;
+}
+
+footer {
+  padding: 20px 20px;
+  color: white;
+}
+
+footer #new-version {
+  background-color: rgb(124, 6, 105);
+  border-style: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+/* end of phone view */
+
+/* begining of tablet view */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section,
+  article {
+    padding: 0 2rem;
+  }
+
+  .image-tablet {
+    display: block;
+    padding-top: 4rem;
+  }
+
+  header .image-tablet img {
+    width: 100%;
+  }
+
+  /* hiding the desktop image from appering on the tablet view */
+  header .combined-header img {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    padding: 2px 5rem 0;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    padding: 0 5rem 0;
+  }
+
+  header button {
+    padding: 15px;
+  }
+
+  /* section */
+
+  section .images img {
+    border-radius: 10px;
+  }
+
+  /* alying the section images two in a row and side by side */
+  section .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.4rem;
+  }
+
+  article h1 {
+    font-size: 2.6rem;
+    padding: 0 8rem;
+    font-weight: bold;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  /* end of article */
+
+  /* footer styling */
+
+  footer {
+    color: rgb(255, 255, 255);
+    padding: 0 3rem 2rem;
+    font-size: 1rem;
+  }
+
+  footer .experience-more {
+    padding-bottom: 1rem;
+  }
+
+  footer h1 {
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  header .combined-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* styling for the header */
+  header h1 {
+    padding: 0 4rem;
+  }
+
+  header p {
+    padding: 0 7px;
+  }
+
+  /* allowing the images for the desktop view to appear on the screen  */
+  header .combined-header img {
+    display: inherit;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  /* section styling */
+
+  section .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 2rem 3rem;
+  }
+
+  section .images img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* article styling */
+  article h1 {
+    padding: 0 18rem 0;
+  }
+
+  article p {
+    padding: 0 12rem 0;
+  }
+
+  /* footer styling */
+  footer {
+    display: flex;
+    color: white;
+    padding: 3rem 14rem;
+    font-size: 1rem;
+  }
+
+  footer #new-version {
+    width: 40%;
+    align-items: flex-end;
+  }
+}
