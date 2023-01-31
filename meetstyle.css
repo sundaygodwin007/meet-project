@@ -4,6 +4,7 @@ nav {
   text-align: center;
   background-color: white;
   width: 100%;
+  padding: 1rem;
 }
 
 /* hiding the image for the tablet screen from being visible on mobile screen */
@@ -42,8 +43,8 @@ header h1 {
 
 header p {
   font-size: 1rem;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+  /* margin-bottom: 2rem; */
+  /* padding: 0 1rem; */
 }
 
 header button {
@@ -65,6 +66,15 @@ header #question {
 header button {
   display: block;
   margin: auto;
+}
+
+/* for the 01 center line */
+.center-line {
+  display: none;
+}
+
+.number-one {
+  display: none;
 }
 
 /* section */
@@ -90,6 +100,10 @@ article h1 {
   font-size: 2rem;
   padding: 0 3rem;
   font-weight: bold;
+}
+
+.number-two {
+  display: none;
 }
 
 /* footer */
@@ -213,10 +227,12 @@ footer #new-version {
   }
 }
 
+/* styling for the desktop view */
 @media (min-width: 992px) {
   header .combined-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
   }
 
   header {
@@ -246,6 +262,23 @@ footer #new-version {
     width: 100%;
   }
 
+  .center-line {
+    display: inherit;
+    border-right: 1px solid rgb(0, 0, 0);
+    height: 8rem;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .number-one {
+    display: inherit;
+    border: 1px solid rgb(0, 0, 0);
+    width: 1rem;
+    border-radius: 5rem;
+    padding: 8px;
+    margin: auto;
+  }
+
   /* section styling */
 
   section .images {
@@ -267,6 +300,16 @@ footer #new-version {
 
   article p {
     padding: 0 12rem 0;
+  }
+
+  .number-two {
+    display: inherit;
+    border: 1px solid rgb(0, 0, 0);
+    width: 1rem;
+    border-radius: 5rem;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 3rem;
   }
 
   /* footer styling */
